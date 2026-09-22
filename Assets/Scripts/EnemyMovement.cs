@@ -70,6 +70,12 @@ public class EnemyMovement : MonoBehaviour
             Destroy(gameObject);
 
         }
+        if (other.CompareTag("Bullet"))
+        {
+            Rigidbody2D rgbd = other.attachedRigidbody;
+        }
+
+        Destroy(gameObject);
     }
 
 }
