@@ -2791,8 +2791,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.26693493}
-  m_Size: {x: 0.63, y: 1.1441175}
+  m_Offset: {x: 0, y: -0.21370733}
+  m_Size: {x: 0.63, y: 1.0376623}
   m_Direction: 0
 --- !u!114 &85058006
 MonoBehaviour:
@@ -2918,7 +2918,7 @@ Transform:
   m_GameObject: {fileID: 85057998}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.41, y: 1.88, z: 0}
+  m_LocalPosition: {x: 6.12, y: 2.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3254,6 +3254,10 @@ PrefabInstance:
     - target: {fileID: 6374939908812404922, guid: 4728b63781d3a834b833ff98c86330b6, type: 3}
       propertyPath: m_Name
       value: Enemy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6374939908812404922, guid: 4728b63781d3a834b833ff98c86330b6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14811,7 +14815,7 @@ Transform:
   m_GameObject: {fileID: 624776038}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.34, y: 4.63, z: 0}
+  m_LocalPosition: {x: 2.64, y: 5.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16582,7 +16586,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &704043786
 Transform:
   m_ObjectHideFlags: 0
@@ -35168,7 +35172,7 @@ GameObject:
   - component: {fileID: 1249769979}
   m_Layer: 6
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62487,7 +62491,7 @@ Transform:
   m_GameObject: {fileID: 1491486387624994312}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 52.25, y: 3.12, z: 0}
+  m_LocalPosition: {x: 24.92, y: 1.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -62508,13 +62512,15 @@ GameObject:
   - component: {fileID: 4280080443174027145}
   - component: {fileID: 7307235772838890043}
   - component: {fileID: 785271256434319132}
+  - component: {fileID: 9151516598569201446}
+  - component: {fileID: 9151516598569201447}
   m_Layer: 7
   m_Name: RangedEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1001 &3820279576520583741
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62761,6 +62767,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6374939908812404922, guid: 4728b63781d3a834b833ff98c86330b6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -62773,7 +62783,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1491486387624994312}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c11952135e4abe5429c2a5634b51232e, type: 3}
   m_Name: 
@@ -62805,6 +62815,44 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &9151516598569201446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491486387624994312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f801adbfec646294d8ba3ac67f8b4c82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RangedEnemy
+  moveSpeed: 2
+  bounciness: 100
+  damageGiven: 1
+  knockbackForce: 100
+  upwardsForce: 5
+  distanceToShoot: 5
+  distanceToStop: 3
+  fireRate: 0
+  firingPoint: {fileID: 0}
+--- !u!114 &9151516598569201447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491486387624994312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f51470932ecd94147b5eac0971f18161, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  startingHealth: 5
+  healthSlider: {fileID: 0}
+  fillImage: {fileID: 0}
+  normalHealthColor: {r: 0, g: 0, b: 0, a: 0}
+  criticalHealthColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
