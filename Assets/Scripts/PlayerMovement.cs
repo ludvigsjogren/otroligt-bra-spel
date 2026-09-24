@@ -113,4 +113,9 @@ public class PlayerMovement : MonoBehaviour
         canMove = true;
     }
 
+    public bool canAttack()
+    {
+        return CheckIsGrounded();
+    }
+
 }
