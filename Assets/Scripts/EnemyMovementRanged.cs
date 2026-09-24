@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class EnemyMovementRanged : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 2.0f;
     [SerializeField] private float bounciness = 100f;
@@ -10,7 +10,12 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private float knockbackForce = 100f;
     [SerializeField] private float upwardsForce = 5f;
 
+    //Shooting
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private Transform shootPoint;
+    [SerializeField] private float shootInterval = 2f;
 
+    private float shootTimer;
     private SpriteRenderer rend;
 
     private void Start()
@@ -28,6 +33,20 @@ public class EnemyMovement : MonoBehaviour
         {
             rend.flipX = false;
         }
+        //Shooting
+        if (shootTimer <= 0f)
+        {
+            Shoot();
+            shootTimer = shootInterval;
+        }
+    }
+    //Shooting
+    private void Shoot()
+    {
+        GameObject bullet = Instantiate(bulletPrefab, shootPoint.position, Quaternion.identity);
+        EnemyBullet enemyBullet = bullet.GetComponent<EnemyBullet>();
+        float direction = moveSpeed > 0 ? 1f : -1f;
+        enemyBullet.SetDirection(direction);
     }
 
     void FixedUpdate()
