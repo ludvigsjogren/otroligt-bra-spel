@@ -6759,7 +6759,7 @@ GameObject:
   m_Component:
   - component: {fileID: 450542203}
   m_Layer: 0
-  m_Name: --[INTERACTABLES]--
+  m_Name: --[PICKUPS]--
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
