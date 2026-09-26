@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2011869061356502810}
   - component: {fileID: 7324214141917002594}
   - component: {fileID: 3185267325742417202}
+  - component: {fileID: -738696012148555658}
   m_Layer: 0
   m_Name: Heart
   m_TagString: Untagged
@@ -152,3 +153,16 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0.03}
   m_Radius: 0.28
+--- !u!114 &-738696012148555658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7871244810463550499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77c465f1291aab24480f1576117fb5e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthPickup
+  healthToRestore: 2
