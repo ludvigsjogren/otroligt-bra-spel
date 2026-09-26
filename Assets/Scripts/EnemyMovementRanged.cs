@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class RangedEnemy : MonoBehaviour
+public class EnemyMovementRanged : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 2.0f;
     [SerializeField] private float bounciness = 100f;
@@ -9,19 +9,19 @@ public class RangedEnemy : MonoBehaviour
     //Knockback
     [SerializeField] private float knockbackForce = 100f;
     [SerializeField] private float upwardsForce = 5f;
+
+    //Shooting
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private Transform shootPoint;
+    [SerializeField] private float shootInterval = 2f;
+
     private SpriteRenderer rend;
-
-    public float distanceToShoot = 5f;
-    public float distanceToStop = 3f;
-
-    public float fireRate;
-    private float timeToFire;
-
-    public Transform firingPoint;
 
     private void Start()
     {
         rend = GetComponent<SpriteRenderer>();
+
+        InvokeRepeating(nameof(Shoot), 1f, shootInterval);
     }
 
     private void Update()
@@ -34,6 +34,24 @@ public class RangedEnemy : MonoBehaviour
         {
             rend.flipX = false;
         }
+
+    }
+    //Shooting
+    private void Shoot()
+    {
+        if (bulletPrefab == null || shootPoint == null)
+        {
+            Debug.LogError("Enemy saknar Bullet Prefab eller Shoot Point!", gameObject);
+            return;
+        }
+        GameObject bullet = Instantiate(bulletPrefab, shootPoint.position, Quaternion.identity);
+        EnemyBullet enemyBullet = bullet.GetComponent<EnemyBullet>();
+        if (enemyBullet == null)
+        {
+            Debug.LogError("Bullet Prefab saknar EnemyBullet-script!", bullet);
+        }
+        float direction = moveSpeed > 0 ? 1f : -1f;
+        enemyBullet.SetDirection(direction);
     }
 
     void FixedUpdate()
@@ -78,6 +96,8 @@ public class RangedEnemy : MonoBehaviour
             Destroy(gameObject);
 
         }
+
+
     }
 
 }

@@ -9,6 +9,8 @@ public class EnemyMovement : MonoBehaviour
     //Knockback
     [SerializeField] private float knockbackForce = 100f;
     [SerializeField] private float upwardsForce = 5f;
+
+
     private SpriteRenderer rend;
 
     private void Start()
@@ -70,6 +72,13 @@ public class EnemyMovement : MonoBehaviour
             Destroy(gameObject);
 
         }
+        if (other.CompareTag("Bullet"))
+        {
+            Rigidbody2D rgbd = other.attachedRigidbody;
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+        }
+
     }
 
 }
