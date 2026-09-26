@@ -49575,7 +49575,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -5664120192891253260, guid: b4a796c79d4f34838bfca5a4a2617f54, type: 3}
-  m_Color: {r: 0, g: 0.83998406, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.9949893, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -54920,7 +54920,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TELEPORT INITIATING PLEASE STAND BY
+  m_text: initializing teleport PLEASE STAND BY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 525303490bdee2a498e9dce6927505c8, type: 2}
   m_sharedMaterial: {fileID: -4220258915642239424, guid: 525303490bdee2a498e9dce6927505c8, type: 2}
@@ -55675,7 +55675,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 23.927597, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -61580,7 +61580,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello friend! I am once again asking for your financial support, it seems i need 10 more coins to be deposited at the end.
+  m_text: 'Thank god you''re here! Something has gone terribly wrong and these vile creatures have invaded the station. you have got to get to the bottom of this! '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 525303490bdee2a498e9dce6927505c8, type: 2}
   m_sharedMaterial: {fileID: -4220258915642239424, guid: 525303490bdee2a498e9dce6927505c8, type: 2}
@@ -61646,7 +61646,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -27.868652, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

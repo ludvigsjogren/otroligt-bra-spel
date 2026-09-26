@@ -16228,8 +16228,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7134, y: 917}
-  m_SizeDelta: {x: 1100, y: 350}
+  m_AnchoredPosition: {x: 5420, y: 1139}
+  m_SizeDelta: {x: 871, y: 718.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &778613758
 MonoBehaviour:
@@ -16251,8 +16251,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b7effb3991faf4040b4a68015fc1d1e4, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 3427559307316122834, guid: 08215e91f52d3064ea1cdc14207b188c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -45129,11 +45129,11 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.06, y: 0.93}
+  m_Offset: {x: 0.06, y: 1.9}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.53846157, y: -0.23809524}
+    oldSize: {x: 0.8125, y: 1.3125}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -45212,8 +45212,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 4279520681319599648, guid: c3bae9c23695dfe4bae021eb6729631a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: -5664120192891253260, guid: b4a796c79d4f34838bfca5a4a2617f54, type: 3}
+  m_Color: {r: 0, g: 0.7987832, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -45232,7 +45232,7 @@ Transform:
   m_GameObject: {fileID: 1181289891}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.94, y: 0.06, z: 0}
+  m_LocalPosition: {x: 4.375, y: -0.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -47742,10 +47742,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2011810621}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0.47011286}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 300}
+  m_AnchoredPosition: {x: 0, y: 0.00008297}
+  m_SizeDelta: {x: 1000, y: 289.6376}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1569482880
 MonoBehaviour:
@@ -47767,10 +47767,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Well done!
+  m_text: initializing teleport please stand by
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 76c07b0db1a6a8245a85f024de1b5764, type: 2}
-  m_sharedMaterial: {fileID: -1703102811137310341, guid: 76c07b0db1a6a8245a85f024de1b5764, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 525303490bdee2a498e9dce6927505c8, type: 2}
+  m_sharedMaterial: {fileID: -4220258915642239424, guid: 525303490bdee2a498e9dce6927505c8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -47973,7 +47973,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -14}
   m_SizeDelta: {x: 1000, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1609333489
@@ -47996,10 +47996,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Not enough coins, collect more!
+  m_text: 10 credits needed to use warp stone
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 76c07b0db1a6a8245a85f024de1b5764, type: 2}
-  m_sharedMaterial: {fileID: -1703102811137310341, guid: 76c07b0db1a6a8245a85f024de1b5764, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 525303490bdee2a498e9dce6927505c8, type: 2}
+  m_sharedMaterial: {fileID: -4220258915642239424, guid: 525303490bdee2a498e9dce6927505c8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -50039,7 +50039,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 61525, y: 299}
+  m_AnchoredPosition: {x: 61877, y: 399}
   m_SizeDelta: {x: 1100, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2011810622
@@ -50062,8 +50062,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b7effb3991faf4040b4a68015fc1d1e4, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 8936236313897758982, guid: c0848e3a1d31622439a5dd55b9665255, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -50285,8 +50285,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 300}
+  m_AnchoredPosition: {x: -45, y: 43}
+  m_SizeDelta: {x: 652, y: 496.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2041548790
 MonoBehaviour:
@@ -50308,17 +50308,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello friend! I am once again asking for your financial support, it seems i need 10 more coins to be deposited at the end.
+  m_text: 'we have detected unusual activity at the old mutation zone. it lies deeper within the station. You must go there and put an end to all this! '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 76c07b0db1a6a8245a85f024de1b5764, type: 2}
-  m_sharedMaterial: {fileID: -1703102811137310341, guid: 76c07b0db1a6a8245a85f024de1b5764, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 525303490bdee2a498e9dce6927505c8, type: 2}
+  m_sharedMaterial: {fileID: -4220258915642239424, guid: 525303490bdee2a498e9dce6927505c8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -50374,7 +50374,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -108.76196, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
