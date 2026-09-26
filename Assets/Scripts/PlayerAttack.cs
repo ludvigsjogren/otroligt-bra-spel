@@ -44,5 +44,15 @@ public class PlayerAttack : MonoBehaviour
         Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
         float direction = rend.flipX ? -1f : 1f;
         bulletRb.linearVelocity = new Vector2(direction * bulletSpeed, 0f);
+        SpriteRenderer bulletRenderer = bullet.GetComponent<SpriteRenderer>();
+
+        if (direction < 0)
+        {
+            bulletRenderer.flipX = true;
+        }
+        else
+        {
+            bulletRenderer.flipX = false;
+        }
     }
 }

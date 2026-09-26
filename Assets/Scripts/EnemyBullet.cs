@@ -7,11 +7,26 @@ public class EnemyBullet : MonoBehaviour
     [SerializeField] private float lifeTime = 5f;
 
     private Rigidbody2D rgbd;
-    
+
+    private void Awake()
+    {
+        rgbd = GetComponent<Rigidbody2D>();
+    }
+
     public void SetDirection(float direction)
     {
         rgbd = GetComponent<Rigidbody2D>();
         rgbd.linearVelocity = new Vector2(direction * speed, 0f);
+        SpriteRenderer rend = GetComponent<SpriteRenderer>();
+
+        if (direction < 0)
+        {
+            rend.flipX = true;
+        }
+        else
+        {
+            rend.flipX = false;
+        }
     }
 
     private void Start()
@@ -23,8 +38,13 @@ public class EnemyBullet : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<PlayerHealth>().TakeDamage(damage);
+            PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
 
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(damage);
+            }
+            
             Destroy(gameObject);
         }
     }

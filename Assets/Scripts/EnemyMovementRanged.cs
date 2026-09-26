@@ -15,12 +15,13 @@ public class EnemyMovementRanged : MonoBehaviour
     [SerializeField] private Transform shootPoint;
     [SerializeField] private float shootInterval = 2f;
 
-    private float shootTimer;
     private SpriteRenderer rend;
 
     private void Start()
     {
         rend = GetComponent<SpriteRenderer>();
+
+        InvokeRepeating(nameof(Shoot), 1f, shootInterval);
     }
 
     private void Update()
@@ -33,18 +34,22 @@ public class EnemyMovementRanged : MonoBehaviour
         {
             rend.flipX = false;
         }
-        //Shooting
-        if (shootTimer <= 0f)
-        {
-            Shoot();
-            shootTimer = shootInterval;
-        }
+
     }
     //Shooting
     private void Shoot()
     {
+        if (bulletPrefab == null || shootPoint == null)
+        {
+            Debug.LogError("Enemy saknar Bullet Prefab eller Shoot Point!", gameObject);
+            return;
+        }
         GameObject bullet = Instantiate(bulletPrefab, shootPoint.position, Quaternion.identity);
         EnemyBullet enemyBullet = bullet.GetComponent<EnemyBullet>();
+        if (enemyBullet == null)
+        {
+            Debug.LogError("Bullet Prefab saknar EnemyBullet-script!", bullet);
+        }
         float direction = moveSpeed > 0 ? 1f : -1f;
         enemyBullet.SetDirection(direction);
     }
@@ -91,12 +96,7 @@ public class EnemyMovementRanged : MonoBehaviour
             Destroy(gameObject);
 
         }
-        if (other.CompareTag("Bullet"))
-        {
-            Rigidbody2D rgbd = other.attachedRigidbody;
-            Destroy(other.gameObject);
-            Destroy(gameObject);
-        }
+
 
     }
 

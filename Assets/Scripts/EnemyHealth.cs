@@ -1,46 +1,30 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
 {
-    [SerializeField] private int startingHealth = 5;
-    [SerializeField] private Slider healthSlider;
-    [SerializeField] private Image fillImage;
-    [SerializeField] private Color normalHealthColor, criticalHealthColor;
+    [SerializeField] private int maxHealth = 3;
+
     private int currentHealth;
 
-    void Start()
+    private void Start()
     {
-        currentHealth = startingHealth;
-        healthSlider.value = currentHealth;
+        currentHealth = maxHealth;
     }
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
 
-        UpdateHealthbar();
+        Debug.Log("Enemy health: " + currentHealth);
 
         if (currentHealth <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
     }
 
-    private void UpdateHealthbar()
-    {
-        healthSlider.value = currentHealth;
-
-        if(currentHealth <= 2)
+        private void Die()
         {
-            fillImage.color = criticalHealthColor;
+        Destroy(gameObject);
         }
-        else
-        {
-            fillImage.color = normalHealthColor;
-        }
-
-    }
-    
-
 }
