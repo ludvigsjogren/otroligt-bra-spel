@@ -45,8 +45,14 @@ public class EnemyBullet : MonoBehaviour
                 playerHealth.TakeDamage(damage);
             }
             
+            
+        }
+
+        if (other.CompareTag("Terrain"))
+        {
             Destroy(gameObject);
         }
+        
     }
 
 }
