@@ -9510,7 +9510,7 @@ GameObject:
   - component: {fileID: 602619269}
   m_Layer: 6
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42701,6 +42701,18 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 0.53
       objectReference: {fileID: 0}
+    - target: {fileID: 4207194044203215049, guid: fcd5ed9d71476c8438ca765b5e87377d, type: 3}
+      propertyPath: fillImage
+      value: 
+      objectReference: {fileID: 476367755}
+    - target: {fileID: 4207194044203215049, guid: fcd5ed9d71476c8438ca765b5e87377d, type: 3}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 21654787}
+    - target: {fileID: 4207194044203215049, guid: fcd5ed9d71476c8438ca765b5e87377d, type: 3}
+      propertyPath: spawnPosition
+      value: 
+      objectReference: {fileID: 1808639957}
     - target: {fileID: 4535303491502526007, guid: fcd5ed9d71476c8438ca765b5e87377d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.23
@@ -42741,6 +42753,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7781191600904996506, guid: fcd5ed9d71476c8438ca765b5e87377d, type: 3}
+      propertyPath: goldcoinText
+      value: 
+      objectReference: {fileID: 567079518}
     - target: {fileID: 8469479592698010220, guid: fcd5ed9d71476c8438ca765b5e87377d, type: 3}
       propertyPath: m_Name
       value: Player
