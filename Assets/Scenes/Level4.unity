@@ -48905,7 +48905,7 @@ MonoBehaviour:
   panel: {fileID: 2011810620}
   finishedText: {fileID: 1569482878}
   unfinishedText: {fileID: 1609333487}
-  levelIndex: 0
+  levelIndex: 5
 --- !u!95 &1622489747
 Animator:
   serializedVersion: 7
