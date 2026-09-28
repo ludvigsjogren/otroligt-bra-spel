@@ -2904,7 +2904,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'sdfsdfsd fsd f s dfffffffffffffffffffffffffffffffffffffffffffffffffff  fffffffffffffffffffffff ffffffffffffffffffffff fffffffffffffffffffffffffffffffff  ffffffffffffffffffffffffffffffffffffffffffffffff ffffffffffffffffffffffffsd<fs<df f dfsdffsDFSdfnsBFJKHSfjkhhjkskjh<sfiuhlslkfh<sliuflfhSLIOSEFASIKFASFKASKHJFEAKLSFKHJshjklfehKJSFKJHAskjhefkjsekjfhhkwaeufhuakwefkiwauihefiulweiufIULHWAIUFHIUWFIUHIUHweliuhiuhllsiufhelihuSAFUHIKHULIFsuhkhulfks '
+  m_text: "A game mad by Ludvig Sj\xF6gren, Malte Berglund and Linus Axelsson\nAssets from: Itch.io\nSoundeffects from: jfxr.frozenfractal.com\nMusic from: Itch.io\nFonts from: Dafont.com"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 525303490bdee2a498e9dce6927505c8, type: 2}
   m_sharedMaterial: {fileID: -4220258915642239424, guid: 525303490bdee2a498e9dce6927505c8, type: 2}
@@ -2934,7 +2934,7 @@ MonoBehaviour:
   m_fontSize: 17
   m_fontSizeBase: 17
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
